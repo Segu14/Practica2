@@ -1,0 +1,231 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8 feb 2024, 17:23:49
+    Author     : sebas
+*/
+
+
+body{ 
+    margin: 0; /*Para que no queden bordes blancos que visualmente se vean feos en la página*/
+    padding: 0;
+}
+
+/*@font-face { Planes para una fuente customizada
+    font-family: F1; 
+    src: url("static/fonts/F1.tff");    
+}*/
+
+header {
+    text-align: center;
+    background-color: red; 
+    height: 80px;
+    width: 100%;
+    position: sticky; /*Ahora el header siempre estará presente en la página,
+                        es importante dejar el top, left y right en 0.*/
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1; /*Este comando indica que el header está sobre todos, para que
+                  nadie se cole en frente de él.*/
+}
+
+.container { 
+    display: flex; /*Este felx nos va ayudar a que el section y el aside puedan
+                     estar en la misma línea y no uno abajo del otro.*/
+    position: relative;
+    height: 100%;
+}
+
+.container p{
+    margin-top:10px;
+    margin-right: 20px;
+}
+
+.texto-corredores {
+    margin-left: 350px;
+}
+
+section{
+    flex: 1;
+    background: white;
+    
+    margin-left: 22%; /*Espacio de separacion entre aside y section*/
+    margin-right: 75px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    
+    text-align: justify;
+    font-family: sans-serif;
+    color: black;
+    
+}
+
+
+aside{
+    width: 20%;
+    background: #292929;
+    position: fixed; /*Aside siempre estará presente también en la página*/
+    top:0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+}
+
+aside p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    background: #242424;
+    position: relative;
+    color: white;
+    height: 50px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: white; /* Color predeterminado para los enlaces no visitados */
+}
+
+a:visited {
+    color: white; /* Color para los enlaces visitados */
+}
+
+a:hover {
+    color: red; /* Color cuando pasas el mouse sobre el enlace */
+}
+
+a:active {
+    color: white; /* Color cuando haces clic en el enlace */
+}
+
+.separador-carros{
+    display: flex;
+}
+
+.separador-carros img {
+    margin-right: 20px;
+}
+
+.separador-corredores {
+    width: 900px;
+}
+
+.contenedor-columnas {
+    overflow: hidden;
+}
+
+.column1, .column2{
+    width: 300px;
+    float: left;
+    margin:100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.separador-corredores ul{
+    padding:0;
+    margin-left:15px;
+}
+
+.grand-prix {
+    position: relative;
+    margin-left: 160px
+}
+
+.grand-prix button {
+    position: relative;
+    margin-left: 275px;
+    width: 150px;
+    height: 25px;
+    
+    border: red;
+    background-color: red;
+    color: white;
+}
+
+.formulario h5, p{
+    margin-top:-10px;
+}
+
+button:hover{
+    background-color: darkred;
+}
+
+.formulario-sum button {
+    width: 80px; 
+    height: 35px; 
+    background-color: red;
+    color: white; 
+    border: none;
+}
+
+
+.bot-checkout input:hover{
+    background-color: darkred;
+}
+
+.bot-confirmar input:hover{
+    background-color: darkred;
+}
+
+.bot-checkout input{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 491px;
+    height: 35px;
+    font-size: 20px
+}
+
+.bot-confirmar input{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 491px;
+    height: 35px;
+    font-size: 20px
+}
+
+.formulario {
+    border: 2px solid black;
+    position: relative;
+    padding: 20px;
+    margin-right: 260px;
+    margin-left: 260px;
+    margin-top: 150px; 
+    margin-bottom: 150px;
+}
+
+.formulario-confirm {
+    border: 2px solid black;
+    position: relative;
+    padding: 20px;
+    margin-right: 343px;
+    margin-left: 343px;
+    margin-top: 150px; 
+    margin-bottom: 150px;
+}
